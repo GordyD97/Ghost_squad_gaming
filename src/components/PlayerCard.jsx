@@ -8,6 +8,8 @@ import CardActions from "@mui/material/CardActions";
 
 const PlayerCard = () => {
   return (
+
+    // multiply cards by 4 x 4 on pages.
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         sx={{ height: 140 }}
