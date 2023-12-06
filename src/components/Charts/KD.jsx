@@ -6,6 +6,12 @@ const KD = () => {
 
 //    the data above is temporary dummy data that is being used to fill the chart with data 
 
+getPlayerData = ({data}) => {
+    const playerData = {playerName},{playerKd},{playerKills},{playerDeaths}
+}
+// above is the start of the function that will retrieve the data from the js file that has the data. 
+// later the data will be retireved from a data base using a third party api or using a data base provided by cloud support. 
+
   return (
      <div>
       <h1>Esports Team Stats</h1>
