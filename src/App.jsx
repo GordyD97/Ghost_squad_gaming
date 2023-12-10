@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Header from './components/Header'
 import PlayerCard from './components/PlayerCard'
+import TeamStats from './components/TeamStats'
 import './App.css'
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
   return (
     <>
      {/* <Header /> */}
-     <PlayerCard />
+     {/* <PlayerCard /> */}
+     <TeamStats />
     </>
   )
 }
