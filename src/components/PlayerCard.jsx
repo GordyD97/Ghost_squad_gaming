@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
+import Image from '../assets/imgs/picofmeatseniorshowcase-resize.jpg'
 
 const PlayerCard = () => {
   return (
@@ -13,8 +14,9 @@ const PlayerCard = () => {
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         sx={{ height: 140 }}
+        src={Image}
         image="/static/assets/imgs/picofmeatseniorshowcase-resize.jpg"
-        title="green iguana"
+        alt="player"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
