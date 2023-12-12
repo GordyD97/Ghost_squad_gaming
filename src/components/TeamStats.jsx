@@ -15,6 +15,12 @@ const TeamStats = () => {
 //   const theme = useTheme();
 
 
+const getStats = (teamData) => {
+    teamData = {overall.kills}, {team.kd}, {game.team.wins}, 
+// create a data page for team stats. when creating include 3 keys and value pairs to the javascript file. 
+// dont forget to import the java script file in the top of the page. Use the javascript file to house more than one cluster of stats. 
+}
+
   return (
     <Card sx={{ display: "flex" }}>
       <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -54,6 +60,18 @@ const TeamStats = () => {
         image="/static/images/cards/live-from-space.jpg"
         alt="Live from space album cover"
       />
+
+      <div>
+        <p>
+          {overall.kills}
+        </p>
+        <p>
+          {team.kd}
+        </p>
+        <p>
+          {game.team.wins}
+        </p>
+      </div>
     </Card>
   );
 }
