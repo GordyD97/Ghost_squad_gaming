@@ -21,6 +21,10 @@ const getStats = (teamData) => {
 // dont forget to import the java script file in the top of the page. Use the javascript file to house more than one cluster of stats. 
 }
 
+getStats();
+
+ 
+
   return (
     <Card sx={{ display: "flex" }}>
       <Box sx={{ display: "flex", flexDirection: "column" }}>
