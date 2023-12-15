@@ -70,3 +70,26 @@ export default function StickyFooter() {
 
 
 // add logos to sticky footer. 
+
+
+
+
+
+/* 
+TO DO LOGOS TO ADD. 
+
+
+lOGITECH ---
+DUCKY KEYBOARDS ---
+TWTICH ---
+HYPERX ---
+COORSAIR ---
+ASTRO ---
+CALIBAR VAPE
+THERMALTAKE ---
+NUPHY ---
+DISCORD ---
+
+
+
+/*
