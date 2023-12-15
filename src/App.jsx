@@ -14,6 +14,7 @@ function App() {
      <Header />
      {/* <PlayerCard /> */}
      {/* <TeamStats /> */}
+     <Footer />
     </>
   )
 }
