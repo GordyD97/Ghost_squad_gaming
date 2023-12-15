@@ -9,14 +9,14 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Image from '../assets/imgs/fortnite.jpg'
 
-const TeamStats = () => {
+const TeamStat = () => {
 
 //     export default function MediaControlCard() {
 //   const theme = useTheme();
 
 
 const getStats = (teamData) => {
-    teamData = {overall.kills}, {team.kd}, {game.team.wins}, 
+    teamData = {overallkills}, {teamkd}, {gameteamwins}, 
 // create a data page for team stats. when creating include 3 keys and value pairs to the javascript file. 
 // dont forget to import the java script file in the top of the page. Use the javascript file to house more than one cluster of stats. 
 }
@@ -80,4 +80,4 @@ getStats();
   );
 }
 
-export default TeamStats
+export default TeamStat
