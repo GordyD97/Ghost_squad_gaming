@@ -23,6 +23,26 @@ function Copyright() {
 const defaultTheme = createTheme();
 
 export default function StickyFooter() {
+
+  const logos = [ 
+
+{ id: lOGITECH},
+{ id: DUCKY KEYBOARDS}, 
+{ id: TWTICH},
+{ id: HYPERX}, 
+{ id: COORSAIR}, 
+{ id: ASTRO}, 
+{ id: CALIBAR VAPE},
+{ id: THERMALTAKE}, 
+{ id: NUPHY}, 
+{ id: DISCORD}
+
+
+  ]
+/*above you are creating a data array of objexccts for the logos of the "sponsors" in each object you will need to refrence the logo img .png or .svg
+to each object then map each object out in the component below with the same style this will be the easiest way and the most uiniform way to complete this task
+refrence live portfolio for the complete function
+*/
   return (
     <ThemeProvider theme={defaultTheme}>
       <Box
@@ -55,6 +75,32 @@ export default function StickyFooter() {
                 : theme.palette.grey[800],
           }}
         >
+
+          {/*/////////////////////////////////////////////////////////////////////////////////////////////// */}
+            {/* in this box there will the logo maping container will be held it is seperated for rendering pruposes. */}
+
+
+            <div>
+              <box>
+                  {logos.map(logos => (
+                    <img key={InsertEmoticon.id}
+                    width="75px"
+                    height="75px"
+                    // figure out how to do the box shadow style it is listed as "paper on mui. "
+              
+                    />
+
+                  ))}
+
+              </box>
+
+
+            </div>
+
+
+
+          {/* //////////////////////////////////////////////////////////////////////////////////////// */}
+
           <Container maxWidth="sm">
             <Typography variant="body1">
               My sticky footer can be found here.
