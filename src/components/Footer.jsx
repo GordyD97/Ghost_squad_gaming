@@ -26,16 +26,16 @@ export default function StickyFooter() {
 
   const logos = [ 
 
-{ id: lOGITECH},
-{ id: DUCKY KEYBOARDS}, 
-{ id: TWTICH},
-{ id: HYPERX}, 
-{ id: COORSAIR}, 
-{ id: ASTRO}, 
-{ id: CALIBAR VAPE},
-{ id: THERMALTAKE}, 
-{ id: NUPHY}, 
-{ id: DISCORD}
+{ id: lOGITECH, src: logitech},
+{ id: DUCKY KEYBOARDS, src: ducky}, 
+{ id: TWTICH, src: twitch},
+{ id: HYPERX, src: hyper}, 
+{ id: COORSAIR, src: coorsair}, 
+{ id: ASTRO, src: astro}, 
+{ id: CALIBAR VAPE, src: vape},
+{ id: THERMALTAKE, src: thermaltake}, 
+{ id: NUPHY, src: nuphy}, 
+{ id: DISCORD, src: discord}
 
 
   ]
