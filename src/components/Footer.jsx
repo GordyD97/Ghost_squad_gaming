@@ -75,29 +75,24 @@ refrence live portfolio for the complete function
                 : theme.palette.grey[800],
           }}
         >
-
           {/*/////////////////////////////////////////////////////////////////////////////////////////////// */}
-            {/* in this box there will the logo maping container will be held it is seperated for rendering pruposes. */}
+          {/* in this box there will the logo maping container will be held it is seperated for rendering pruposes. */}
 
-
-            <div>
-              <box>
-                  {logos.map(logos => (
-                    <img key={InsertEmoticon.id}
+          <div>
+            <box>
+              {logos.map(({ id, src }) => (
+                <div>
+                  <img
+                    key={src}
                     width="75px"
                     height="75px"
                     // figure out how to do the box shadow style it is listed as "paper on mui. "
-              
-                    />
-
-                  ))}
-
-              </box>
-
-
-            </div>
-
-
+                  />
+                  <p key={id}></p>
+                </div>
+              ))}
+            </box>
+          </div>
 
           {/* //////////////////////////////////////////////////////////////////////////////////////// */}
 
@@ -121,21 +116,3 @@ refrence live portfolio for the complete function
 
 
 
-/* 
-TO DO LOGOS TO ADD. 
-
-
-lOGITECH ---
-DUCKY KEYBOARDS ---
-TWTICH ---
-HYPERX ---
-COORSAIR ---
-ASTRO ---
-CALIBAR VAPE
-THERMALTAKE ---
-NUPHY ---
-DISCORD ---
-
-
-
-/*
