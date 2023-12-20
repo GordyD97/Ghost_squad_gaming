@@ -5,7 +5,10 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
-
+import logitech from "../assets/imgs/SITE LOGOS/logitechlogo.jpg";
+import ducky from '../assets/imgs/SITE LOGOS/duckykb.png';
+import twitch from '../assets/imgs/SITE LOGOS/twtich.png';
+import hyper from '../assets/imgs/SITE LOGOS/hpyerxlogo.png';
 function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary">
@@ -30,12 +33,12 @@ export default function StickyFooter() {
 { id: 'DUCKY_KEYBOARDS', src: ducky}, 
 { id: 'TWTICH', src: twitch},
 { id: 'HYPERX', src: hyper}, 
-{ id: 'COORSAIR', src: coorsair}, 
-{ id: 'ASTRO', src: astro}, 
-{ id: 'CALIBAR_VAPE', src: vape},
-{ id: 'THERMALTAKE', src: thermaltake}, 
-{ id: 'NUPHY', src: nuphy}, 
-{ id: 'DISCORD', src: discord}
+// { id: 'COORSAIR', src: coorsair}, 
+// { id: 'ASTRO', src: astro}, 
+// { id: 'CALIBAR_VAPE', src: vape},
+// { id: 'THERMALTAKE', src: thermaltake}, 
+// { id: 'NUPHY', src: nuphy}, 
+// { id: 'DISCORD', src: discord}
 
 
   ]
@@ -78,21 +81,23 @@ refrence live portfolio for the complete function
           {/*/////////////////////////////////////////////////////////////////////////////////////////////// */}
           {/* in this box there will the logo maping container will be held it is seperated for rendering pruposes. */}
 
-          <div>
+          
             <box>
-              {logos.map(({ id, src }) => (
-                <div>
-                  <img
-                    key={src}
-                    width="75px"
-                    height="75px"
-                    // figure out how to do the box shadow style it is listed as "paper on mui. "
-                  />
-                  <p key={id}></p>
-                </div>
-              ))}
+              <div>
+                {logos.map(({ id, src }) => (
+                  <div>
+                    <img
+                      key={src}
+                      width="75px"
+                      height="75px"
+                      // figure out how to do the box shadow style it is listed as "paper on mui. "
+                    />
+                    <p key={id}></p>
+                  </div>
+                ))}
+              </div>
             </box>
-          </div>
+          
 
           {/* //////////////////////////////////////////////////////////////////////////////////////// */}
 
