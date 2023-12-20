@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Header from './components/Header'
 import PlayerCard from './components/PlayerCard'
-// import Footer from './components/Footer'
+import Footer from './components/Footer'
 // import TeamStats from './components/TeamStats'
 import  Schedule  from './components/Schedule'
 import './App.css'
@@ -17,7 +17,7 @@ function App() {
      {/* <TeamStats /> */}
      <Schedule />
 
-     {/* <Footer /> */}
+     <Footer /> 
     </>
   )
 }
