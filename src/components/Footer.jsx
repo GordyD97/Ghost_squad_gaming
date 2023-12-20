@@ -9,6 +9,15 @@ import logitech from "../assets/imgs/SITE LOGOS/logitechlogo.jpg";
 import ducky from '../assets/imgs/SITE LOGOS/duckykb.png';
 import twitch from '../assets/imgs/SITE LOGOS/twtich.png';
 import hyper from '../assets/imgs/SITE LOGOS/hpyerxlogo.png';
+import coorsair from '../assets/imgs/SITE LOGOS/Corsair-logo.png';
+import astro from '../assets/imgs/SITE LOGOS/Astro_Gaming_2006.svg';
+import vape from '../assets/imgs/SITE LOGOS/CaliBar-Logo.webp';
+import thermaltake from '../assets/imgs/SITE LOGOS/thermaltake.svg';
+import nuphy from '../assets/imgs/SITE LOGOS/nuphy.webp';
+import discord from '../assets/imgs/SITE LOGOS/discord.png';
+
+
+
 function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary">
@@ -33,12 +42,12 @@ export default function StickyFooter() {
 { id: 'DUCKY_KEYBOARDS', src: ducky}, 
 { id: 'TWTICH', src: twitch},
 { id: 'HYPERX', src: hyper}, 
-// { id: 'COORSAIR', src: coorsair}, 
-// { id: 'ASTRO', src: astro}, 
-// { id: 'CALIBAR_VAPE', src: vape},
-// { id: 'THERMALTAKE', src: thermaltake}, 
-// { id: 'NUPHY', src: nuphy}, 
-// { id: 'DISCORD', src: discord}
+{ id: 'COORSAIR', src: coorsair}, 
+{ id: 'ASTRO', src: astro}, 
+{ id: 'CALIBAR_VAPE', src: vape},
+{ id: 'THERMALTAKE', src: thermaltake}, 
+{ id: 'NUPHY', src: nuphy}, 
+{ id: 'DISCORD', src: discord}
 
 
   ]
@@ -81,23 +90,21 @@ refrence live portfolio for the complete function
           {/*/////////////////////////////////////////////////////////////////////////////////////////////// */}
           {/* in this box there will the logo maping container will be held it is seperated for rendering pruposes. */}
 
-          
-            <box>
-              <div>
-                {logos.map(({ id, src }) => (
-                  <div>
-                    <img
-                      key={src}
-                      width="75px"
-                      height="75px"
-                      // figure out how to do the box shadow style it is listed as "paper on mui. "
-                    />
-                    <p key={id}></p>
-                  </div>
-                ))}
-              </div>
-            </box>
-          
+          <box>
+            <div>
+              {logos.map(({ id, src }) => (
+                <box sx={{ flexDirection: "row" }}>
+                  <img
+                    key={src}
+                    width="75px"
+                    height="75px"
+                    // figure out how to do the box shadow style it is listed as "paper on mui. "
+                  />
+                  <p key={id}></p>
+                </box>
+              ))}
+            </div>
+          </box>
 
           {/* //////////////////////////////////////////////////////////////////////////////////////// */}
 
