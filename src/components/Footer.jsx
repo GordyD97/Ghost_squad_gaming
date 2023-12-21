@@ -92,14 +92,14 @@ find different logitech logo. png sucks.
           {/* in this box there will the logo maping container will be held it is seperated for rendering pruposes. */}
 
           <box>
-            <div>
+            <div sx={{ display: "flex", flexDirection: "column" }}>
               {logos.map(({ id, src }) => (
-                <div sx={{ flexDirection: "row" }}>
+                <div>
                   <img
                     src={src}
                     alt={id}
                     width="75px"
-                    height="75px"
+
                     // figure out how to do the box shadow style it is listed as "paper on mui. "
                   />
                   <p key={id}>{id}</p>

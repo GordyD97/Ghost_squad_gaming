@@ -15,11 +15,11 @@ const TeamStat = () => {
 //   const theme = useTheme();
 
 
-const getStats = (teamData) => {
-    teamData = {overallkills}, {teamkd}, {gameteamwins}, 
-// create a data page for team stats. when creating include 3 keys and value pairs to the javascript file. 
-// dont forget to import the java script file in the top of the page. Use the javascript file to house more than one cluster of stats. 
-}
+// const getStats = (teamData) => {
+//     teamData = {overallkills}, {teamkd}, {gameteamwins}
+// // create a data page for team stats. when creating include 3 keys and value pairs to the javascript file. 
+// // dont forget to import the java script file in the top of the page. Use the javascript file to house more than one cluster of stats. 
+// }
 
 getStats();
 
