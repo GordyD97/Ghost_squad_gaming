@@ -54,6 +54,7 @@ export default function StickyFooter() {
 /*above you are creating a data array of objexccts for the logos of the "sponsors" in each object you will need to refrence the logo img .png or .svg
 to each object then map each object out in the component below with the same style this will be the easiest way and the most uiniform way to complete this task
 refrence live portfolio for the complete function
+find different logitech logo. png sucks.
 */
   return (
     <ThemeProvider theme={defaultTheme}>
@@ -93,15 +94,16 @@ refrence live portfolio for the complete function
           <box>
             <div>
               {logos.map(({ id, src }) => (
-                <box sx={{ flexDirection: "row" }}>
+                <div sx={{ flexDirection: "row" }}>
                   <img
-                    key={src}
+                    src={src}
+                    alt={id}
                     width="75px"
                     height="75px"
                     // figure out how to do the box shadow style it is listed as "paper on mui. "
                   />
-                  <p key={id}></p>
-                </box>
+                  <p key={id}>{id}</p>
+                </div>
               ))}
             </div>
           </box>
