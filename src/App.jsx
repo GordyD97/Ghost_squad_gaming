@@ -16,7 +16,7 @@ function App() {
      {/* <PlayerCard /> */}
      {/* <TeamStat /> */}
      <Schedule />
-
+{/* add new component called up coming tournaments with cards that contain game title, date and tournament description */}
      <Footer /> 
     </>
   )
