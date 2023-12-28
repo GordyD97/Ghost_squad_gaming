@@ -1,12 +1,14 @@
 import React from 'react'
 import Paper from '@mui/material/Paper';
+import { Chip } from "@mui/material-next/Chip";
+
 import Fortnite from '../assets/imgs/fortnite.jpg'
 
 
 const Tournaments = () => {
   return (
     <>
-      <paper elevation={3}>
+      <Paper elevation={3}>
         <img src={Fortnite}
         alt="fotnitebanner"
         />
@@ -17,7 +19,7 @@ const Tournaments = () => {
         <Chip label="Duos" />
         <Chip label="Kill Race" />
         <Chip label="Battlle Royale" />
-      </paper>
+      </Paper>
     </>
   );
 }
