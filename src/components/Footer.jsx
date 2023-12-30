@@ -15,7 +15,7 @@ import vape from '../assets/imgs/SITE LOGOS/CaliBar-Logo.webp';
 import thermaltake from '../assets/imgs/SITE LOGOS/thermaltake.svg';
 import nuphy from '../assets/imgs/SITE LOGOS/nuphy.webp';
 import discord from '../assets/imgs/SITE LOGOS/discord.png';
-
+import { useTheme } from "@mui/material/styles";
 
 
 function Copyright() {
@@ -56,6 +56,16 @@ to each object then map each object out in the component below with the same sty
 refrence live portfolio for the complete function
 find different logitech logo. png sucks.
 */
+
+
+
+function DeepChild() {
+  const theme = useTheme();
+  return <span>{`spacing ${theme.spacing}`}</span>;
+
+
+  // above is  a theme template. 
+}
   return (
     <ThemeProvider theme={defaultTheme}>
       <Box
