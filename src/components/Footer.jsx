@@ -6,17 +6,17 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import logitech from "../assets/imgs/SITE LOGOS/logitechlogo.jpg";
-import ducky from '../assets/imgs/SITE LOGOS/duckykb.png';
-import twitch from '../assets/imgs/SITE LOGOS/twtich.png';
-import hyper from '../assets/imgs/SITE LOGOS/hpyerxlogo.png';
-import coorsair from '../assets/imgs/SITE LOGOS/Corsair-logo.png';
-import astro from '../assets/imgs/SITE LOGOS/Astro_Gaming_2006.svg';
-import vape from '../assets/imgs/SITE LOGOS/CaliBar-Logo.webp';
-import thermaltake from '../assets/imgs/SITE LOGOS/thermaltake.svg';
-import nuphy from '../assets/imgs/SITE LOGOS/nuphy.webp';
-import discord from '../assets/imgs/SITE LOGOS/discord.png';
+import ducky from "../assets/imgs/SITE LOGOS/duckykb.png";
+import twitch from "../assets/imgs/SITE LOGOS/twtich.png";
+import hyper from "../assets/imgs/SITE LOGOS/hpyerxlogo.png";
+import coorsair from "../assets/imgs/SITE LOGOS/Corsair-logo.png";
+import astro from "../assets/imgs/SITE LOGOS/Astro_Gaming_2006.svg";
+import vape from "../assets/imgs/SITE LOGOS/CaliBar-Logo.webp";
+import thermaltake from "../assets/imgs/SITE LOGOS/thermaltake.svg";
+import nuphy from "../assets/imgs/SITE LOGOS/nuphy.webp";
+import discord from "../assets/imgs/SITE LOGOS/discord.png";
 import { useTheme } from "@mui/material/styles";
-
+import Grid from "@mui/material/Grid";
 
 function Copyright() {
   return (
@@ -35,37 +35,30 @@ function Copyright() {
 const defaultTheme = createTheme();
 
 export default function StickyFooter() {
-
-  const logos = [ 
-
-{ id: 'lOGITECH', src: logitech},
-{ id: 'DUCKY_KEYBOARDS', src: ducky}, 
-{ id: 'TWTICH', src: twitch},
-{ id: 'HYPERX', src: hyper}, 
-{ id: 'COORSAIR', src: coorsair}, 
-{ id: 'ASTRO', src: astro}, 
-{ id: 'CALIBAR_VAPE', src: vape},
-{ id: 'THERMALTAKE', src: thermaltake}, 
-{ id: 'NUPHY', src: nuphy}, 
-{ id: 'DISCORD', src: discord}
-
-
-  ]
-/*above you are creating a data array of objexccts for the logos of the "sponsors" in each object you will need to refrence the logo img .png or .svg
+  const logos = [
+    { id: "lOGITECH", src: logitech },
+    { id: "DUCKY_KEYBOARDS", src: ducky },
+    { id: "TWTICH", src: twitch },
+    { id: "HYPERX", src: hyper },
+    { id: "COORSAIR", src: coorsair },
+    { id: "ASTRO", src: astro },
+    { id: "CALIBAR_VAPE", src: vape },
+    { id: "THERMALTAKE", src: thermaltake },
+    { id: "NUPHY", src: nuphy },
+    { id: "DISCORD", src: discord },
+  ];
+  /*above you are creating a data array of objexccts for the logos of the "sponsors" in each object you will need to refrence the logo img .png or .svg
 to each object then map each object out in the component below with the same style this will be the easiest way and the most uiniform way to complete this task
 refrence live portfolio for the complete function
 find different logitech logo. png sucks.
 */
 
+  function DeepChild() {
+    const theme = useTheme();
+    return <span>{`spacing ${theme.spacing}`}</span>;
 
-
-function DeepChild() {
-  const theme = useTheme();
-  return <span>{`spacing ${theme.spacing}`}</span>;
-
-
-  // above is  a theme template. 
-}
+    // above is  a theme template.
+  }
   return (
     <ThemeProvider theme={defaultTheme}>
       <Box
@@ -102,9 +95,13 @@ function DeepChild() {
           {/* in this box there will the logo maping container will be held it is seperated for rendering pruposes. */}
 
           <box>
-            <div sx={{ display: "flex", flexDirection: "column" }}>
+            <Grid
+              container
+              spacing={{ xs: 2, md: 3 }}
+              columns={{ xs: 4, sm: 8, md: 12 }}
+            >
               {logos.map(({ id, src }) => (
-                <div>
+                <Grid item xs={2} sm={4} md={3} key={id}>
                   <img
                     src={src}
                     alt={id}
@@ -113,9 +110,9 @@ function DeepChild() {
                     // figure out how to do the box shadow style it is listed as "paper on mui. "
                   />
                   <p key={id}>{id}</p>
-                </div>
+                </Grid>
               ))}
-            </div>
+            </Grid>
           </box>
 
           {/* //////////////////////////////////////////////////////////////////////////////////////// */}
@@ -132,11 +129,4 @@ function DeepChild() {
   );
 }
 
-
-
-// add logos to sticky footer. 
-
-
-
-
-
+// add logos to sticky footer.
