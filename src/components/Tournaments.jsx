@@ -1,6 +1,6 @@
 import React from 'react'
 import Paper from '@mui/material/Paper';
-import { Chip } from "@mui/material-next/Chip";
+import Chip from "@mui/material/Chip";
 
 import Fortnite from '../assets/imgs/fortnite.jpg'
 
