@@ -4,7 +4,7 @@ import Chip from "@mui/material/Chip";
 
 
 import Fortnite from "../assets/imgs/fortnite.jpg";
-import BoxFightimg from "../assets/imgs/boxfight.jpeg";
+import BoxFightimg from "../assets/imgs/boxfight1.jpg";
 
 const Tournaments = () => {
   return (
@@ -20,8 +20,13 @@ const Tournaments = () => {
         <Chip label="Battlle Royale" />
       </Paper>
       <Paper elevation={3}>
-        
-        <img  src={BoxFightimg} alt="fotnitebanner" />
+        <div style={{ width: "50%", margin: "auto" }}>
+          <img
+            src={BoxFightimg}
+            alt="boxfightbanner"
+            style={{ width: "50%", height: "auto" }}
+          />
+        </div>
         {/* the component will have dynamic data based on either the game or the date of the up cmoing tournament.  */}
 
         <p> Box fight free forall with Match Bounty</p>

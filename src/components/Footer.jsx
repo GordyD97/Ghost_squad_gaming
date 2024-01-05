@@ -94,7 +94,7 @@ find different logitech logo. png sucks.
           {/*/////////////////////////////////////////////////////////////////////////////////////////////// */}
           {/* in this box there will the logo maping container will be held it is seperated for rendering pruposes. */}
 
-          <box>
+          <Box>
             <Grid
               container
               spacing={{ xs: 2, md: 3 }}
@@ -113,7 +113,7 @@ find different logitech logo. png sucks.
                 </Grid>
               ))}
             </Grid>
-          </box>
+          </Box>
 
           {/* //////////////////////////////////////////////////////////////////////////////////////// */}
 
