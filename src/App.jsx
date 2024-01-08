@@ -14,7 +14,7 @@ function App() {
   return (
     <>
      <Header />
-     {/* <PlayerCard /> */}
+     <PlayerCard />
      {/* <TeamStat /> */}
      <Schedule />
      <Tournaments />
