@@ -30,8 +30,9 @@ const PlayerCard = () => {
       </CardContent>
       <CardActions>
         {/* add social links below to transfer user to links with a links  */}
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+        <Button size="small">Social links</Button>
+        <Button size="small">Player Stats</Button>
+        <Button size="small">Tournamnet Apereances</Button>
       </CardActions>
     </Card>
   );
