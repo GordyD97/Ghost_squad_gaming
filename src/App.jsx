@@ -7,7 +7,7 @@ import  Schedule  from './components/Schedule'
 import Tournaments from './components/tournaments'
 import './App.css'
 import { FiberPin } from '@mui/icons-material'
-import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { ThemeProvider } from "@mui/material/styles";
 import Theme from './theme'
 
 

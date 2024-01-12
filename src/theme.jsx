@@ -71,7 +71,42 @@ const theme = createTheme({
         },
       },
     },
+    MuiCard: {
+      styleOverrides: {
+        maxWidth: 345,
+        marginBottom: '1rem', // Adjust spacing between cards
+      },
+    },
+    MuiCardMedia: {
+      styleOverrides: {
+        height: 140,
+        width: "50%",
+        margin: "auto",
+      },
+    },
+    MuiCardContent: {
+      styleOverrides: {
+        "&:last-child": {
+          paddingBottom: '16px', // Add some padding to the last child (Typography)
+        },
+      },
+    },
+    MuiTypography: {
+      styleOverrides: {
+        gutterBottom: {
+          marginBottom: '0.5rem', // Adjust spacing below heading
+        },
+      },
+    },
+    MuiButton: {
+      styleOverrides: {
+        sizeSmall: {
+          marginLeft: 'auto', // Move buttons to the right
+        },
+      },
+    },
   },
+  
 });
 
 export default theme;

@@ -8,10 +8,12 @@ import CardActions from "@mui/material/CardActions";
 
 
 import ProfilePic from '../assets/imgs/pfp/forty.jpg';
+import { ThemeProvider } from '@emotion/react';
 
 const PlayerCard = () => {
   return (
     // multiply cards by 4 x 4 on pages.
+     <ThemeProvider theme={theme}>
     <Card sx={{ maxWidth: 345 }}>
       <img
         style={{ height: 140, width: "50%", margin: "auto"  }}
@@ -35,6 +37,7 @@ const PlayerCard = () => {
         <Button size="small">Tournamnet Apereances</Button>
       </CardActions>
     </Card>
+    </ThemeProvider>
   );
 }
 
