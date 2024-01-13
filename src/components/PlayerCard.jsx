@@ -5,10 +5,10 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
-
-
+import theme from '../theme.jsx';
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 import ProfilePic from '../assets/imgs/pfp/forty.jpg';
-import { ThemeProvider } from '@emotion/react';
+// import { ThemeProvider } from '@emotion/react';
 
 const PlayerCard = () => {
   return (

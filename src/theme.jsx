@@ -98,13 +98,7 @@ const theme = createTheme({
         },
       },
     },
-    MuiButton: {
-      styleOverrides: {
-        sizeSmall: {
-          marginLeft: 'auto', // Move buttons to the right
-        },
-      },
-    },
+    
   },
   
 });
