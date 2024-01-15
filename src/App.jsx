@@ -8,6 +8,7 @@ import Tournaments from './components/tournaments'
 import './App.css'
 import { FiberPin } from '@mui/icons-material'
 import { ThemeProvider } from "@mui/material/styles";
+import theme from "./theme.jsx";
 import Theme from './theme'
 
 
