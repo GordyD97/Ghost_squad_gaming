@@ -15,8 +15,8 @@ import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid' // a plugin!
 
 const scheduleData = [
-  { date: "2023-11-01", time: "12:00 PM", team1: "Team A", team2: "Team B" },
-  { date: "2023-11-05", time: "3:30 PM", team1: "Team C", team2: "Team D" },
+  { date: "2024-02-01", time: "12:00 PM", team1: "Team A", team2: "Team B" },
+  { date: "2024-02-05", time: "3:30 PM", team1: "Team C", team2: "Team D" },
   // Add more schedule data as needed
 ];
 
