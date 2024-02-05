@@ -15,8 +15,8 @@ import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid' // a plugin!
 
 const scheduleData = [
-  { date: "2024-02-01", time: "12:00 PM", team1: "Team A", team2: "Team B" },
-  { date: "2024-02-05", time: "3:30 PM", team1: "Team C", team2: "Team D" },
+  { date: "2024-02-26", time: "12:00 PM", team1: "Team A", team2: "Team B" },
+  { date: "2024-02-27", time: "3:30 PM", team1: "Team C", team2: "Team D" },
   // Add more schedule data as needed
 ];
 
@@ -54,8 +54,8 @@ const EsportsSchedule = () => {
       plugins={[dayGridPlugin]}
       initialView="dayGridMonth"
       events={[
-        { title: "Friday Night Box Fights", date: "2024-01-26" },
-        { title: "Satruday Frag", date: "2024-01-27" },
+        { title: "Friday Night Box Fights", date: "2024-02-26" },
+        { title: "Satruday Frag", date: "2024-02-27" },
       ]}
       // above the events are added into the code. With the events being hard coded there needs to be a link for the "client"- or site admin 
       // other than me the developer. there either needs to be a link to an admin ui dashboard or 

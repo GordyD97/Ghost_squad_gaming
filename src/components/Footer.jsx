@@ -71,13 +71,13 @@ find different logitech logo. png sucks.
         <CssBaseline />
         <Container component="main" sx={{ mt: 8, mb: 2 }} maxWidth="sm">
           <Typography variant="h5" component="h4" gutterBottom>
-            Sticky footer
+           Also team sponsors
           </Typography>
           <Typography variant="p" component="p" gutterBottom>
-            {"Pin a footer to the bottom of the viewport."}
-            {"The footer will move as the main element of the page grows."}
+            {"Ghost squad gaming uses all of these products to be the best team in the world."}
+            {"To be the best you have to use the best."}
           </Typography>
-          <Typography variant="body1">Sticky footer placeholder.</Typography>
+          <Typography variant="body1">Team Sponsors.</Typography>
         </Container>
         <Box
           component="footer"
@@ -119,7 +119,7 @@ find different logitech logo. png sucks.
 
           <Container maxWidth="sm">
             <Typography variant="body1">
-              My sticky footer can be found here.
+              Sponsors found here
             </Typography>
             <Copyright />
           </Container>
