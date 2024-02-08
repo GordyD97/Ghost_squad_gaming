@@ -8,6 +8,22 @@ const Players = () => {
 // players data object will be created here . 
 
 
+/* 
+  [  
+    {id:name,
+    src: img,
+    description: <P>,
+    Links: href,
+    }
+  ]
+
+
+
+
+*/
+
+
+
 
   return (
     <>
@@ -18,14 +34,11 @@ const Players = () => {
 
       {players.map(({ id, src }) => (
         <Grid item xs={2} sm={4} md={3} key={id}>
-          <img
-            src={src}
-            alt={id}
-            width="75px"
-
-            // figure out how to do the box shadow style it is listed as "paper on mui. "
-          />
-          <p key={id}>{id}</p>
+        {id:"name",
+    src: img,
+    description: "description. ",
+    social: href,
+    },
         </Grid>
       ))}
 
