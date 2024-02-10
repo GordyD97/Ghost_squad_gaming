@@ -83,15 +83,17 @@ const playerdata = [
       <Header />
 
       <PlayerCard />
-     
 
       {players.map(({ id, src }) => (
         <Grid item xs={2} sm={4} md={3} key={id}>
-        {id:"name",
-    src: img,
-    description: "description. ",
-    social: href,
-    },
+          <h2>{name}</h2>
+          <p>Age: {age}</p>
+          <p>City: {city}</p>
+          <p>Hometown {hometown}</p>
+          <p>favoriteGame {favoriteGame}</p>
+          <p>profiileimg {profileImg}</p>
+          <p>description {description}</p>
+          
         </Grid>
       ))}
 
